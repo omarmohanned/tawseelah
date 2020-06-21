@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="550dp"
+                                                   android:orientation="vertical"
+                                                   app:cardElevation="20dp"
+                                                   android:layout_margin="15dp">
+	
+	
+	<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent">
+		
+		<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+		              android:orientation="vertical"
+		android:background="@color/color_handler_res">
+			
+			<TextView
+					android:text="معلومات المطعم
+"
+					android:gravity="center"
+					android:textStyle="bold"
+					android:textSize="18dp"
+					android:layout_margin="5dp"
+					android:layout_width="match_parent"
+					android:layout_height="80dp" android:id="@+id/textView45"/>
+			<TextView
+					android:text="TextView"
+					android:layout_margin="15dp"
+					android:layout_height="50dp"
+					android:layout_width="match_parent"
+					 android:id="@+id/first_name1"/>
+			<TextView
+					android:text="TextView"
+					android:layout_width="match_parent"
+					android:layout_margin="15dp"
+					android:layout_height="50dp" android:id="@+id/second_name1"/>
+			<TextView
+					android:text="TextView"
+					android:layout_width="match_parent"
+					android:layout_margin="15dp"
+					android:layout_height="50dp" android:id="@+id/res_name1"/>
+			<TextView
+					android:text="TextView"
+					android:layout_width="match_parent"
+					android:layout_margin="15dp"
+					android:layout_height="50dp" android:id="@+id/res_place1"/>
+			<TextView
+					android:text="TextView"
+					android:layout_width="match_parent"
+					android:layout_margin="15dp"
+					android:layout_height="50dp" android:id="@+id/res_phone1"/>
+			<Button
+					android:text="موقع المطعم"
+					android:textStyle="bold"
+					android:background="@color/trueyellow"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content" android:id="@+id/loc_res"/>
+		</LinearLayout>
+	</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

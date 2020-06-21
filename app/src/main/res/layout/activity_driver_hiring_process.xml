@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".driver_hiring_process"
+    android:background="@color/gray">
+    
+    
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="44dp">
+    
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+    
+            <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="94dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="right"
+                    android:text="تعين سائق من اجل طلبك"
+                    android:textSize="25dp" />
+            <EditText
+                    android:id="@+id/resname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:hint="أدخل اسم المطعم "
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:ems="50"
+                    android:padding="20dp"
+                    android:inputType="textPersonName"/>
+        
+            <EditText
+                    android:id="@+id/meal_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="20dp"
+                    android:hint="أدخل اسم الوجبة "
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+        
+            <EditText
+                    android:id="@+id/meal_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:padding="20dp"
+                    android:layout_margin="12dp"
+                    android:hint="أدخل سعر الوجبة"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+        
+            <EditText
+                    android:id="@+id/starting_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:padding="20dp"
+                    android:hint="أدخل نقطة البداية "
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+            />
+        
+            <EditText
+                    android:id="@+id/finish_point"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="أدخل نقطة النهاية "
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:padding="20dp"
+                    android:layout_margin="12dp"/>
+        
+            <EditText
+                    android:id="@+id/cus_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="أدخل اسم العميل "
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:padding="20dp"
+                    android:layout_margin="12dp"/>
+        
+            <EditText
+                    android:id="@+id/cus_loc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="أدخل موقع العميل"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:padding="20dp"
+                    android:layout_margin="12dp"/>
+        
+            <EditText
+                    android:id="@+id/cus_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:hint="أدخل رقم هاتف العميل "
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:padding="20dp"
+                    android:layout_margin="12dp"/>
+        
+            <EditText
+                    android:id="@+id/dilivary_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:hint="أدخل تكلفة التسليم "
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:padding="20dp"
+                    android:layout_margin="12dp"/>
+            <Switch
+                    android:text="الحصول على موقع (يرجى التحقق منها)"
+                    android:layout_margin="15dp"
+                    android:textSize="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/getloc"/>
+            <Button
+                    android:id="@+id/hire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:padding="20dp"
+                    android:text="توظيف"
+                    android:background="@color/trueyellow"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

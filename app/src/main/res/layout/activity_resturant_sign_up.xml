@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/colorPrimary"
+                                                   tools:context=".driver_sign_up" tools:layout_editor_absoluteY="25dp">
+	
+	<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintHorizontal_bias="0.0" app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintTop_toTopOf="parent">
+		
+		<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+		              android:orientation="vertical"
+		android:layout_margin="12dp"
+		              android:layout_marginLeft="10dp"
+		              android:layout_marginRight="30dp"
+		>
+			<TextView
+					android:id="@+id/textView8"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:gravity="left"
+					android:text="صفحة تسجيل المطعم"
+					android:layout_margin="15dp"
+					android:layout_gravity="right"
+					android:textSize="25sp"
+			/>
+			<TextView
+					android:id="@+id/textView9"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:text="التسجل"
+					android:gravity="center"
+					android:layout_margin="15dp"
+					android:textSize="20dp"
+			/>
+			<EditText
+					android:id="@+id/firstname"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:ems="10"
+					android:gravity="right"
+					android:layout_gravity="left"
+					
+					android:layout_margin="15dp"
+					android:hint="الاسم الاول
+"
+					android:inputType="textPersonName"
+					
+					
+					android:textSize="15dp"
+			/>
+			<EditText
+					android:id="@+id/secondname"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:ems="10"
+					android:layout_margin="15dp"
+					android:hint="الاسم الثاني
+"
+					android:inputType="textPersonName"
+					android:layout_gravity="left"
+					android:gravity="right"
+					
+					
+					android:textSize="15dp"
+			/>
+			<EditText
+					android:id="@+id/emailaddress"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_margin="15dp"
+					android:ems="10"
+					android:hint="عنوان بريد الكتروني
+"
+					android:inputType="textEmailAddress"
+					android:layout_gravity="left"
+					android:gravity="right"
+			
+			/>
+			<EditText
+					android:id="@+id/phone1"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:ems="10"
+					android:layout_margin="15dp"
+					android:hint="رقم الهاتف
+"
+					android:inputType="phone"
+					android:layout_gravity="left"
+					android:gravity="right"
+			
+			
+			/>
+			<EditText
+					android:id="@+id/restaurantplace"
+					android:layout_width="match_parent"
+					android:layout_margin="15dp"
+					android:layout_height="50dp"
+					android:ems="10"
+					android:hint="مكان المطعم
+"
+					android:inputType="textPersonName"
+					android:layout_gravity="left"
+					android:gravity="right"
+			
+			
+			/>
+			<EditText
+					android:id="@+id/restaurantname"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_margin="15dp"
+					android:autofillHints="red"
+					android:ems="10"
+					android:hint="اسم المطعم"
+					android:inputType="textPersonName"
+					android:layout_gravity="left"
+					android:gravity="right"
+			
+			/>
+			<EditText
+					android:id="@+id/password"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_margin="15dp"
+					android:hint="أدخل كلمة المرور"
+					android:inputType="textPassword"
+					android:layout_gravity="left"
+					android:gravity="right"
+			
+			/>
+			<Button
+					android:text="اكتساب الموقع مهم جدا"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_margin="15dp"
+					android:id="@+id/loc_get"
+					
+					android:background="@color/trueyellow"
+					android:layout_gravity="left"
+					android:gravity="center"
+			/>
+			<Button
+					android:id="@+id/register"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:layout_margin="15dp"
+					
+					android:background="@color/trueyellow"
+					android:text="تسجيل"
+					android:textSize="22dp"
+					android:layout_gravity="left"
+					
+			/>
+		</LinearLayout>
+	</ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

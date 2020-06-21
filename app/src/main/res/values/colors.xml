@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#23708A</color>
+	<color name="colorPrimaryDark">#4586EB</color>
+	<color name="colorAccent">#3DB8E6</color>
+	<color name="white">#F7F8F8</color>
+	<color name="orange">#4C4F66</color>
+	<color name="yellow">#3F51B5</color>
+	<color name="red">#CC0F36</color>
+	<color name="back_ground_splash">#FDFDFE</color>
+	<color name="purple">#4381B6</color>
+	<color name="black">#121313</color>
+	<color name="gray">#969999</color>
+	<color name="trueyellow">#FFA800</color>
+	<color name="mix_1_hiring_process">#7F8A9C</color>
+	<color name="mix_2_hiring_process">#787370</color>
+	<color name="mix_1_all_res_view">#F8E7E9</color>
+	<color name="mix_2_all_res_view">#2E3B7D</color>
+	<color name="color_handler_res">#50A5A5</color>
+
+</resources>

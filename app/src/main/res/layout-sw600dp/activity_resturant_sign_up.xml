@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/colorPrimary"
+                                                   tools:context=".driver_sign_up">
+	
+	<TextView
+			android:id="@+id/textView8"
+			android:layout_width="411dp"
+			android:layout_height="65dp"
+			android:gravity="center"
+			android:text="restaurant sign up page"
+			android:textSize="25sp"
+			android:layout_marginTop="2dp" app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+			app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="8dp"
+			app:layout_constraintBottom_toTopOf="@+id/textView9"/>
+	
+	<TextView
+			android:id="@+id/textView9"
+			android:layout_width="177dp"
+			android:layout_height="33dp"
+			android:text="Sign up"
+			
+			android:textSize="20dp"
+			android:layout_marginEnd="8dp"
+			app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+			android:layout_marginStart="20dp" android:layout_marginBottom="16dp"
+			app:layout_constraintBottom_toTopOf="@+id/textView10" app:layout_constraintHorizontal_bias="0.1"/>
+	
+	<TextView
+			android:id="@+id/textView10"
+			android:layout_width="343dp"
+			android:layout_height="41dp"
+			android:text="Please fill in this form to create an account!"
+			
+			android:textSize="18dp"
+			android:layout_marginEnd="8dp"
+			app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+			android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.0"
+			android:layout_marginBottom="20dp" app:layout_constraintBottom_toTopOf="@+id/firstname"/>
+	
+	<EditText
+			android:id="@+id/firstname"
+			android:layout_width="176dp"
+			android:layout_height="42dp"
+			android:ems="10"
+			android:hint="FIRST Name"
+			android:inputType="textPersonName"
+			
+			
+			android:textSize="15dp"
+			app:layout_constraintBaseline_toBaselineOf="@+id/secondname" android:layout_marginEnd="8dp"
+			app:layout_constraintEnd_toStartOf="@+id/secondname" android:layout_marginStart="8dp"
+			app:layout_constraintStart_toStartOf="parent"/>
+	
+	<EditText
+			android:id="@+id/secondname"
+			android:layout_width="146dp"
+			android:layout_height="41dp"
+			android:ems="10"
+			android:hint="SECOND Name"
+			android:inputType="textPersonName"
+			
+			
+			android:textSize="15dp"
+			android:layout_marginEnd="28dp"
+			app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="36dp"
+			app:layout_constraintTop_toBottomOf="@+id/textView10" android:layout_marginBottom="8dp"
+			app:layout_constraintBottom_toTopOf="@+id/emailaddress" app:layout_constraintVertical_bias="0.0"/>
+	
+	<EditText
+			android:id="@+id/emailaddress"
+			android:layout_width="306dp"
+			android:layout_height="wrap_content"
+			android:ems="10"
+			android:hint="Email address"
+			android:inputType="textEmailAddress"
+			
+			
+			android:layout_marginTop="8dp"
+			app:layout_constraintTop_toBottomOf="@+id/firstname" android:layout_marginEnd="8dp"
+			app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintBottom_toTopOf="@+id/phone1" app:layout_constraintHorizontal_bias="0.25"
+			app:layout_constraintVertical_bias="0.25"/>
+	
+	<EditText
+			android:id="@+id/phone1"
+			android:layout_width="310dp"
+			android:layout_height="0dp"
+			android:ems="10"
+			android:hint="phone Number"
+			android:inputType="phone"
+			
+			
+			android:layout_marginEnd="8dp"
+			app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+			app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.27"
+			android:layout_marginBottom="80dp" app:layout_constraintBottom_toTopOf="@+id/restaurantplace"/>
+	
+	<EditText
+			android:id="@+id/restaurantplace"
+			android:layout_width="314dp"
+			android:layout_height="47dp"
+			android:ems="10"
+			android:hint="restaurant place"
+			android:inputType="textPersonName"
+			
+			
+			app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintHorizontal_bias="0.278" app:layout_constraintBottom_toTopOf="@+id/restaurantname"
+			android:layout_marginBottom="20dp"/>
+	
+	<EditText
+			android:id="@+id/restaurantname"
+			android:layout_width="323dp"
+			android:layout_height="41dp"
+			android:autofillHints="red"
+			android:ems="10"
+			android:hint="restaurant NAME"
+			android:inputType="textPersonName"
+			
+			android:layout_marginStart="8dp"
+			app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+			app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="28dp"
+			app:layout_constraintBottom_toTopOf="@+id/loc_get" app:layout_constraintHorizontal_bias="0.263"/>
+	
+	<Button
+			android:id="@+id/register"
+			android:layout_width="290dp"
+			android:layout_height="51dp"
+			android:background="@color/trueyellow"
+			android:gravity="center"
+			android:text="Register"
+			android:textSize="22dp"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+			android:layout_marginBottom="4dp" app:layout_constraintHorizontal_bias="0.504"/>
+	
+	<EditText
+			android:id="@+id/password"
+			android:layout_width="314dp"
+			android:layout_height="44dp"
+			android:gravity="left"
+			android:hint="enter password"
+			android:inputType="textPassword"
+			
+			android:layout_marginTop="8dp"
+			app:layout_constraintTop_toBottomOf="@+id/phone1"
+			app:layout_constraintBottom_toTopOf="@+id/restaurantplace" android:layout_marginStart="8dp"
+			app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+			app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.271"
+			app:layout_constraintVertical_bias="0.243"/>
+	<Button
+			android:text="location acquire"
+			android:layout_width="372dp"
+			android:background="@color/trueyellow"
+			android:layout_height="43dp"
+			android:id="@+id/loc_get"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toTopOf="@+id/register"
+			android:layout_marginBottom="12dp" app:layout_constraintHorizontal_bias="0.487"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
